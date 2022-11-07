@@ -1,0 +1,1082 @@
+{
+	"info": {
+		"_postman_id": "63190cd5-e2ce-4bcc-a275-d4144f0fc9b6",
+		"name": "Actividad 1 - Hello Express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21167494"
+	},
+	"item": [
+		{
+			"name": "employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.0.7:8000/api/employees",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "192.168.0.7:8000/api/employees",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"844-7Z7rQbY+KtD2Dy5Gf51Dsfu/T7I\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:37:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Sue\",\n        \"age\": 19,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2342\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Picasso\",\n            \"food\": \"pizza\"\n        },\n        \"finished\": [\n            17,\n            3\n        ],\n        \"badges\": [\n            \"blue\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 85,\n                \"bonus\": 20\n            },\n            {\n                \"points\": 85,\n                \"bonus\": 10\n            }\n        ]\n    },\n    {\n        \"name\": \"Bob\",\n        \"age\": 42,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"7673\"\n        },\n        \"privileges\": \"admin\",\n        \"favorites\": {\n            \"artist\": \"Miro\",\n            \"food\": \"meringue\"\n        },\n        \"finished\": [\n            11,\n            25\n        ],\n        \"badges\": [\n            \"green\"\n        ],\n        \"points\": [\n            {\n                \"points\": 85,\n                \"bonus\": 20\n            },\n            {\n                \"points\": 64,\n                \"bonus\": 12\n            }\n        ]\n    },\n    {\n        \"name\": \"Willy\",\n        \"age\": 22,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"8263\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Cassatt\",\n            \"food\": \"cake\"\n        },\n        \"finished\": [\n            6\n        ],\n        \"badges\": [\n            \"blue\",\n            \"Picasso\"\n        ],\n        \"points\": [\n            {\n                \"points\": 81,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 55,\n                \"bonus\": 20\n            }\n        ]\n    },\n    {\n        \"name\": \"John\",\n        \"age\": 34,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2143\"\n        },\n        \"privileges\": \"admin\",\n        \"favorites\": {\n            \"artist\": \"Chagall\",\n            \"food\": \"chocolate\"\n        },\n        \"finished\": [\n            5,\n            11\n        ],\n        \"badges\": [\n            \"Picasso\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 53,\n                \"bonus\": 15\n            },\n            {\n                \"points\": 51,\n                \"bonus\": 15\n            }\n        ]\n    },\n    {\n        \"name\": \"Steve\",\n        \"age\": 23,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"8253\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Noguchi\",\n            \"food\": \"nougat\"\n        },\n        \"finished\": [\n            14,\n            6\n        ],\n        \"badges\": [\n            \"orange\"\n        ],\n        \"points\": [\n            {\n                \"points\": 71,\n                \"bonus\": 20\n            }\n        ]\n    },\n    {\n        \"name\": \"Martin\",\n        \"age\": 43,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"5623\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"food\": \"pizza\",\n            \"artist\": \"Picasso\"\n        },\n        \"finished\": [\n            18,\n            12\n        ],\n        \"badges\": [\n            \"black\",\n            \"blue\"\n        ],\n        \"points\": [\n            {\n                \"points\": 78,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 57,\n                \"bonus\": 7\n            }\n        ]\n    },\n    {\n        \"name\": \"Martin2\",\n        \"age\": 430,\n        \"phone\": {\n            \"personal\": \"555-123-1232\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"5623\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"food\": \"pizza\",\n            \"artist\": \"Picasso\"\n        },\n        \"finished\": [\n            18,\n            12\n        ],\n        \"badges\": [\n            \"black\",\n            \"blue\"\n        ],\n        \"points\": [\n            {\n                \"points\": 78,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 57,\n                \"bonus\": 7\n            }\n        ]\n    },\n    {\n        \"name\": \"Martin2\",\n        \"age\": 430,\n        \"phone\": {\n            \"personal\": \"555-123-1232\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"5623\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"food\": \"pizza\",\n            \"artist\": \"Picasso\"\n        },\n        \"finished\": [\n            18,\n            12\n        ],\n        \"badges\": [\n            \"black\",\n            \"blue\"\n        ],\n        \"points\": [\n            {\n                \"points\": 78,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 57,\n                \"bonus\": 7\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Page 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.0.7:8000/api/employees?page=1",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Page 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "192.168.0.7:8000/api/employees?page=1",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "528"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"210-doN7sM6yxPFVitywOYQWLZ4tB6I\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:00:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Sue\",\n        \"age\": 19,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2342\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Picasso\",\n            \"food\": \"pizza\"\n        },\n        \"finished\": [\n            17,\n            3\n        ],\n        \"badges\": [\n            \"blue\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 85,\n                \"bonus\": 20\n            },\n            {\n                \"points\": 85,\n                \"bonus\": 10\n            }\n        ]\n    },\n    {\n        \"name\": \"Bob\",\n        \"age\": 42,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"7673\"\n        },\n        \"privileges\": \"admin\",\n        \"favorites\": {\n            \"artist\": \"Miro\",\n            \"food\": \"meringue\"\n        },\n        \"finished\": [\n            11,\n            25\n        ],\n        \"badges\": [\n            \"green\"\n        ],\n        \"points\": [\n            {\n                \"points\": 85,\n                \"bonus\": 20\n            },\n            {\n                \"points\": 64,\n                \"bonus\": 12\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "page 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees?page=2",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "page 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees?page=2",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "541"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21d-rezidaXjw4sXWk/QdCPi8bhV3fI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:01:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Willy\",\n        \"age\": 22,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"8263\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Cassatt\",\n            \"food\": \"cake\"\n        },\n        \"finished\": [\n            6\n        ],\n        \"badges\": [\n            \"blue\",\n            \"Picasso\"\n        ],\n        \"points\": [\n            {\n                \"points\": 81,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 55,\n                \"bonus\": 20\n            }\n        ]\n    },\n    {\n        \"name\": \"John\",\n        \"age\": 34,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2143\"\n        },\n        \"privileges\": \"admin\",\n        \"favorites\": {\n            \"artist\": \"Chagall\",\n            \"food\": \"chocolate\"\n        },\n        \"finished\": [\n            5,\n            11\n        ],\n        \"badges\": [\n            \"Picasso\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 53,\n                \"bonus\": 15\n            },\n            {\n                \"points\": 51,\n                \"bonus\": 15\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "page N",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees?page=4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "page 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees?page=2",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "541"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21d-rezidaXjw4sXWk/QdCPi8bhV3fI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:01:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Willy\",\n        \"age\": 22,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"8263\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Cassatt\",\n            \"food\": \"cake\"\n        },\n        \"finished\": [\n            6\n        ],\n        \"badges\": [\n            \"blue\",\n            \"Picasso\"\n        ],\n        \"points\": [\n            {\n                \"points\": 81,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 55,\n                \"bonus\": 20\n            }\n        ]\n    },\n    {\n        \"name\": \"John\",\n        \"age\": 34,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2143\"\n        },\n        \"privileges\": \"admin\",\n        \"favorites\": {\n            \"artist\": \"Chagall\",\n            \"food\": \"chocolate\"\n        },\n        \"finished\": [\n            5,\n            11\n        ],\n        \"badges\": [\n            \"Picasso\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 53,\n                \"bonus\": 15\n            },\n            {\n                \"points\": 51,\n                \"bonus\": 15\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "oldest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees/oldest",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"oldest"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "oldest",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees/oldest",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"oldest"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "267"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10b-li8GkDKXbBB5P1pw1+sGkyIZKfg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:02:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Martin\",\n    \"age\": 43,\n    \"phone\": {\n        \"personal\": \"555-123-123\",\n        \"work\": \"555-456-456\",\n        \"ext\": \"5623\"\n    },\n    \"privileges\": \"user\",\n    \"favorites\": {\n        \"food\": \"pizza\",\n        \"artist\": \"Picasso\"\n    },\n    \"finished\": [\n        18,\n        12\n    ],\n    \"badges\": [\n        \"black\",\n        \"blue\"\n    ],\n    \"points\": [\n        {\n            \"points\": 78,\n            \"bonus\": 8\n        },\n        {\n            \"points\": 57,\n            \"bonus\": 7\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "youngest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees/youngest",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"youngest"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "youngest",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees/youngest",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"youngest"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-1O579Y7GFxzC/m79cU8l7K/O9zo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:18:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Sue\",\n    \"age\": 19,\n    \"phone\": {\n        \"personal\": \"555-123-123\",\n        \"work\": \"555-456-456\",\n        \"ext\": \"2342\"\n    },\n    \"privileges\": \"user\",\n    \"favorites\": {\n        \"artist\": \"Picasso\",\n        \"food\": \"pizza\"\n    },\n    \"finished\": [\n        17,\n        3\n    ],\n    \"badges\": [\n        \"blue\",\n        \"black\"\n    ],\n    \"points\": [\n        {\n            \"points\": 85,\n            \"bonus\": 20\n        },\n        {\n            \"points\": 85,\n            \"bonus\": 10\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "User true",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees?user=true",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User true",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees?user=true",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1038"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"40e-IIMRskdHTkewuU8qn9EhVYcfpto\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:03:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Sue\",\n        \"age\": 19,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2342\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Picasso\",\n            \"food\": \"pizza\"\n        },\n        \"finished\": [\n            17,\n            3\n        ],\n        \"badges\": [\n            \"blue\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 85,\n                \"bonus\": 20\n            },\n            {\n                \"points\": 85,\n                \"bonus\": 10\n            }\n        ]\n    },\n    {\n        \"name\": \"Willy\",\n        \"age\": 22,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"8263\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Cassatt\",\n            \"food\": \"cake\"\n        },\n        \"finished\": [\n            6\n        ],\n        \"badges\": [\n            \"blue\",\n            \"Picasso\"\n        ],\n        \"points\": [\n            {\n                \"points\": 81,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 55,\n                \"bonus\": 20\n            }\n        ]\n    },\n    {\n        \"name\": \"Steve\",\n        \"age\": 23,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"8253\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Noguchi\",\n            \"food\": \"nougat\"\n        },\n        \"finished\": [\n            14,\n            6\n        ],\n        \"badges\": [\n            \"orange\"\n        ],\n        \"points\": [\n            {\n                \"points\": 71,\n                \"bonus\": 20\n            }\n        ]\n    },\n    {\n        \"name\": \"Martin\",\n        \"age\": 43,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"5623\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"food\": \"pizza\",\n            \"artist\": \"Picasso\"\n        },\n        \"finished\": [\n            18,\n            12\n        ],\n        \"badges\": [\n            \"black\",\n            \"blue\"\n        ],\n        \"points\": [\n            {\n                \"points\": 78,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 57,\n                \"bonus\": 7\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "New employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Martin2\",\r\n    \"age\": 430,\r\n    \"phone\": {\r\n        \"personal\": \"555-123-1232\",\r\n        \"work\": \"555-456-456\",\r\n        \"ext\": \"5623\"\r\n    },\r\n    \"privileges\": \"user\",\r\n    \"favorites\": {\r\n        \"food\": \"pizza\",\r\n        \"artist\": \"Picasso\"\r\n    },\r\n    \"finished\": [\r\n        18,\r\n        12\r\n    ],\r\n    \"badges\": [\r\n        \"black\",\r\n        \"blue\"\r\n    ],\r\n    \"points\": [\r\n        {\r\n            \"points\": 78,\r\n            \"bonus\": 8\r\n        },\r\n        {\r\n            \"points\": 57,\r\n            \"bonus\": 7\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Martin2\",\r\n    \"age\": 430,\r\n    \"phone\": {\r\n        \"personal\": \"555-123-1232\",\r\n        \"work\": \"555-456-456\",\r\n        \"ext\": \"5623\"\r\n    },\r\n    \"privileges\": \"user\",\r\n    \"favorites\": {\r\n        \"food\": \"pizza\",\r\n        \"artist\": \"Picasso\"\r\n    },\r\n    \"finished\": [\r\n        18,\r\n        12\r\n    ],\r\n    \"badges\": [\r\n        \"black\",\r\n        \"blue\"\r\n    ],\r\n    \"points\": [\r\n        {\r\n            \"points\": 78,\r\n            \"bonus\": 8\r\n        },\r\n        {\r\n            \"points\": 57,\r\n            \"bonus\": 7\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "270"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10e-20OfEa7gw0E6eScDOv8J/A32P/0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:25:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Martin2\",\n    \"age\": 430,\n    \"phone\": {\n        \"personal\": \"555-123-1232\",\n        \"work\": \"555-456-456\",\n        \"ext\": \"5623\"\n    },\n    \"privileges\": \"user\",\n    \"favorites\": {\n        \"food\": \"pizza\",\n        \"artist\": \"Picasso\"\n    },\n    \"finished\": [\n        18,\n        12\n    ],\n    \"badges\": [\n        \"black\",\n        \"blue\"\n    ],\n    \"points\": [\n        {\n            \"points\": 78,\n            \"bonus\": 8\n        },\n        {\n            \"points\": 57,\n            \"bonus\": 7\n        }\n    ]\n}"
+				},
+				{
+					"name": "bad_request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"foo\": \"bar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-M27I68Z1YHb5ogMnF6+txL4Cy90\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:47:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"400\": \"Bad Request\",\n    \"message\": \"Missing name\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Badges black",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees?badges=black",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "badges",
+							"value": "black"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Badges black",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees?badges=black",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "badges",
+									"value": "black"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1081"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"439-8AtSD+FXBLKwvyS3OBKUIUDIHAg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:07:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Sue\",\n        \"age\": 19,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2342\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"artist\": \"Picasso\",\n            \"food\": \"pizza\"\n        },\n        \"finished\": [\n            17,\n            3\n        ],\n        \"badges\": [\n            \"blue\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 85,\n                \"bonus\": 20\n            },\n            {\n                \"points\": 85,\n                \"bonus\": 10\n            }\n        ]\n    },\n    {\n        \"name\": \"John\",\n        \"age\": 34,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"2143\"\n        },\n        \"privileges\": \"admin\",\n        \"favorites\": {\n            \"artist\": \"Chagall\",\n            \"food\": \"chocolate\"\n        },\n        \"finished\": [\n            5,\n            11\n        ],\n        \"badges\": [\n            \"Picasso\",\n            \"black\"\n        ],\n        \"points\": [\n            {\n                \"points\": 53,\n                \"bonus\": 15\n            },\n            {\n                \"points\": 51,\n                \"bonus\": 15\n            }\n        ]\n    },\n    {\n        \"name\": \"Martin\",\n        \"age\": 43,\n        \"phone\": {\n            \"personal\": \"555-123-123\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"5623\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"food\": \"pizza\",\n            \"artist\": \"Picasso\"\n        },\n        \"finished\": [\n            18,\n            12\n        ],\n        \"badges\": [\n            \"black\",\n            \"blue\"\n        ],\n        \"points\": [\n            {\n                \"points\": 78,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 57,\n                \"bonus\": 7\n            }\n        ]\n    },\n    {\n        \"name\": \"Martin2\",\n        \"age\": 430,\n        \"phone\": {\n            \"personal\": \"555-123-1232\",\n            \"work\": \"555-456-456\",\n            \"ext\": \"5623\"\n        },\n        \"privileges\": \"user\",\n        \"favorites\": {\n            \"food\": \"pizza\",\n            \"artist\": \"Picasso\"\n        },\n        \"finished\": [\n            18,\n            12\n        ],\n        \"badges\": [\n            \"black\",\n            \"blue\"\n        ],\n        \"points\": [\n            {\n                \"points\": 78,\n                \"bonus\": 8\n            },\n            {\n                \"points\": 57,\n                \"bonus\": 7\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "NAME",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7:8000/api/employees/Bob",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"Bob"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "NAME Bob",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees/Bob",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"Bob"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "260"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"104-vSzejROopcymq6WjllCFbNo6bMc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:30:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Bob\",\n    \"age\": 42,\n    \"phone\": {\n        \"personal\": \"555-123-123\",\n        \"work\": \"555-456-456\",\n        \"ext\": \"7673\"\n    },\n    \"privileges\": \"admin\",\n    \"favorites\": {\n        \"artist\": \"Miro\",\n        \"food\": \"meringue\"\n    },\n    \"finished\": [\n        11,\n        25\n    ],\n    \"badges\": [\n        \"green\"\n    ],\n    \"points\": [\n        {\n            \"points\": 85,\n            \"bonus\": 20\n        },\n        {\n            \"points\": 64,\n            \"bonus\": 12\n        }\n    ]\n}"
+				},
+				{
+					"name": "NAME sue",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees/sue",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"sue"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-1O579Y7GFxzC/m79cU8l7K/O9zo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:49:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Sue\",\n    \"age\": 19,\n    \"phone\": {\n        \"personal\": \"555-123-123\",\n        \"work\": \"555-456-456\",\n        \"ext\": \"2342\"\n    },\n    \"privileges\": \"user\",\n    \"favorites\": {\n        \"artist\": \"Picasso\",\n        \"food\": \"pizza\"\n    },\n    \"finished\": [\n        17,\n        3\n    ],\n    \"badges\": [\n        \"blue\",\n        \"black\"\n    ],\n    \"points\": [\n        {\n            \"points\": 85,\n            \"bonus\": 20\n        },\n        {\n            \"points\": 85,\n            \"bonus\": 10\n        }\n    ]\n}"
+				},
+				{
+					"name": "NAME notaname",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8000/api/employees/notaname",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"notaname"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13-yxCLi4PD/ygH21IIGX1+SOT+B/E\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Nov 2022 03:49:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"404\": \"not_found\"\n}"
+				}
+			]
+		}
+	]
+}
