@@ -1,0 +1,27 @@
+{
+        "name": "John",
+        "age": 23,
+        "phone": {
+          "personal": "555-123-123",
+          "work": "555-456-456",
+          "ext": "8253"
+        },
+        "privileges": "user",
+        "favorites": {
+          "artist": "Noguchi",
+          "food": "nougat"
+        },
+        "finished": [
+          14,
+          6
+        ],
+        "badges": [
+          "orange"
+        ],
+        "points": [
+          {
+            "points": 71,
+            "bonus": 20
+          }
+        ]
+      }

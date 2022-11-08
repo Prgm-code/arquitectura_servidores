@@ -16,14 +16,14 @@ router.get('/employees', (req, res) => {
         res.json(employeesPage);
 
     } else if (req.query.user) { // this if statement is to check the user query and covers exercise 4
-        
+
         let employeesUsers = employees.filter(employee => employee.privileges === 'user');
         res.json(employeesUsers);
 
-      
-        
-    } else if (req.query.badges){ // this if statement is to check the badges query and covers exercise 7
-        
+
+
+    } else if (req.query.badges) { // this if statement is to check the badges query and covers exercise 7
+
         let employeesBadges = employees.filter(employee => employee.badges.includes('black'));
         res.json(employeesBadges);
     }
@@ -40,7 +40,7 @@ router.get('/employees/oldest', (req, res) => { // this route is to check the ol
             oldest = employees[i];
         }
     }
-    res.json(oldest);
+    res.status(200).json(oldest);
 });
 
 router.get('/employees/youngest', (req, res) => { // this route is to check the youngest query and is the same as the oldest route but with the < sign
@@ -50,20 +50,22 @@ router.get('/employees/youngest', (req, res) => { // this route is to check the 
             youngest = employees[i];
         }
     }
-    res.json(youngest);
+    res.status(200).json(youngest);
 });
 
-router.post('/employees', (req, res) => { // this route is to check the new employee match with the first level of keys in the json file
+router.post('/employees', (req, res, next) => { // this route is to check the new employee match with the first level of keys in the json file
     const newEmployee = req.body;
-   Object.keys(employees[0]).forEach(key => {
-         if (!newEmployee[key]) {
-                res.status(400).json({message: `Missing ${key}`, 400: 'Bad Request'});
-                return;
-            }
-        });
-
+    let exit = false;
+    Object.keys(employees[0]).forEach(key => {
+        if (!newEmployee[key])  return exit = true;
+        
+    });
+    if (exit) return res.status(400).json({400: 'Bad Request'});
+    
     employees.push(newEmployee);
-    res.json(newEmployee);
+    res.status(201).json(newEmployee);
+
+
 });
 
 
@@ -74,7 +76,7 @@ router.get('/employees/:NAME', (req, res) => {
     if (employee) {
 
         res.json(employee);
-    }  else {
+    } else {
         res.status(404).json({ 404: 'not_found' });
     }
 });

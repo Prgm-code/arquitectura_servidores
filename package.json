@@ -5,6 +5,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "test": "jest --watch --detectOpenHandles",
     "start": "node app.js",
     "dev": "nodemon  app.js"
   },
@@ -14,9 +15,11 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "http-errors": "^1.8.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "supertest": "^6.3.1"
   },
   "devDependencies": {
+    "jest": "^29.3.0",
     "nodemon": "^2.0.12"
   }
 }
